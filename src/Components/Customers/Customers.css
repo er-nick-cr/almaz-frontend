@@ -1,0 +1,103 @@
+.customers {
+	height: 100vh;
+	padding-left: 70px;
+	box-sizing: border-box;
+}
+
+.customers__add-button {
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 30px;
+	margin: 10px 20px;
+	position: relative;
+	color: #14213d;
+	border: 1px solid rgba(20, 33, 61, 0.4);
+	background: none;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+.customers__add-button:before,
+.customers__add-button:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+}
+.customers__add-button:before {
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid #14213d;
+	border-top: 1px solid #14213d;
+	transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
+}
+.customers__add-button:after {
+	top: 0;
+	right: 0;
+	border-right: 1px solid #14213d;
+	border-bottom: 1px solid #14213d;
+	transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
+}
+.customers__add-button:hover:before,
+.customers__add-button:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+.customers__add-button:hover:before {
+	transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
+}
+.customers__add-button:hover:after {
+	transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
+}
+.customers__add-button:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.customers__button-text {
+	font-size: 24px;
+	color: #14213d;
+}
+
+.customers__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.customers__input-container {
+	width: 40vw;
+	height: 70px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid rgba(20, 33, 61, 0.4);
+	margin: 0 0 0 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.customers__input-container_focused {
+	border-bottom: 2px solid #14213d;
+}
+
+.customers__search-input {
+	background: transparent;
+	border: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 34px;
+	color: #14213d;
+	padding: 0;
+	width: 100%;
+}
+
+.customers__search-input:focus {
+	outline: none;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Switch, Link } from 'react-router-dom';
 import orders from '../../images/orders.svg';
 import car from '../../images/car.svg';
 import people from '../../images/people.svg';
@@ -97,8 +98,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/orders"
 						onClick={handleOrdersClick}
 						className={
 							isOrdersActive
@@ -113,7 +114,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Заказы</span>
-					</a>
+					</Link>
 				</li>
 				<li
 					className={
@@ -128,8 +129,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/delivery"
 						onClick={handleDeliveryClick}
 						className={
 							isDeliveryActive
@@ -144,7 +145,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Доставка</span>
-					</a>
+					</Link>
 				</li>
 				<li
 					className={
@@ -159,8 +160,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/customers"
 						onClick={handleClientsClick}
 						className={
 							isClientsActive
@@ -175,7 +176,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Клиенты</span>
-					</a>
+					</Link>
 				</li>
 				<li
 					className={
@@ -190,8 +191,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/debitors"
 						onClick={handleDebitorsClick}
 						className={
 							isDebitorsActive
@@ -206,7 +207,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Список должников</span>
-					</a>
+					</Link>
 				</li>
 				<li
 					className={
@@ -221,8 +222,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/settings"
 						onClick={handleSettingsClick}
 						className={
 							isSettingsActive
@@ -237,7 +238,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Настройки</span>
-					</a>
+					</Link>
 				</li>
 				<li
 					className={
@@ -252,8 +253,8 @@ function Navigation() {
 							<b></b>
 						</div>
 					)}
-					<a
-						href="#"
+					<Link
+						to="/exit"
 						onClick={handleExitClick}
 						className={
 							isExitActive
@@ -268,7 +269,7 @@ function Navigation() {
 							/>
 						</span>
 						<span className="navigation__title">Выйти</span>
-					</a>
+					</Link>
 				</li>
 			</ul>
 			<div
